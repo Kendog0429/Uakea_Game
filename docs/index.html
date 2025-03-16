@@ -7,12 +7,12 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
-    <img src="LEI1.png" class="lei lei-top-left">
-    <img src="LEI2.png" class="lei lei-top-right">
-    <img src="LEI3.png" class="lei lei-bottom-left">
-    <img src="LEI4.png" class="lei lei-bottom-right">
-    <img src="LEI5.png" class="lei lei-middle-left">
-    <img src="LEI6.png" class="lei lei-middle-right">
+    <img src="LEI1.jpeg" class="lei lei-top-left">
+    <img src="LEI2.jpeg" class="lei lei-top-right">
+    <img src="LEI3.jpeg" class="lei lei-bottom-left">
+    <img src="LEI4.jpeg" class="lei lei-bottom-right">
+    <img src="LEI5.jpeg" class="lei lei-middle-left">
+    <img src="LEI6.jpeg" class="lei lei-middle-right">
 
     <div class="container">
         <h1>Uakea's Spark Rescue</h1>
@@ -90,7 +90,7 @@
             def display_phrase(category):
                 phrase = random.choice(phrases[category])
                 output_element = Element("output")
-                output_element.write(phrase)
+                output_element.write(phrase, append=False)
 
             Element("compliment").element.onclick = lambda e: display_phrase("compliments")
             Element("joke").element.onclick = lambda e: display_phrase("jokes")
