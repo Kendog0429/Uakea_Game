@@ -1,0 +1,97 @@
+body {
+    background-color: #fce4ec;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('flowers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #ff69b4;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff80ab;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.lei {
+    position: absolute;
+    z-index: 2;
+}
+
+.lei-top-left {
+    top: 10px;
+    left: 10px;
+    width: 150px;
+}
+
+.lei-top-right {
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+
+.lei-bottom-left {
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+}
+
+.lei-bottom-right {
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+
+.lei-middle-left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+}
+
+.lei-middle-right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    width: 120px;
+}
